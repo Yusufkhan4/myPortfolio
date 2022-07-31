@@ -1,0 +1,564 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Ubuntu';
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+.facewall{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: no-repeat fixed url(../myMedia/facewall.jpg);
+    color: inherit;
+    justify-content: center;
+    align-items: center;
+    z-index: -5;
+}
+
+.img1{
+    /* background-color: #22A39F; */
+    background-color: #1A4D2E;
+    position: absolute;
+    opacity: 0.8;
+    z-index: 2;
+    height: 100vh;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.facewall>.info{
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    width: 70%;
+    align-items: center;
+    color: #76BA99;
+    z-index: 10;
+}
+
+.facewall>.info>h1{
+    font-size: 4rem;
+    margin: 0;
+    font-family:'Mochiy Pop One';
+
+}
+
+.facewall>.info>p{
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.info>hr{
+    width: 55%;
+    border-width:0;
+    height:2px;
+    background-color:#76BA99;
+}
+
+.scroll-down{
+    z-index: 10;
+    width: 110px;
+    height: 80px;
+    background-color: #222222;
+    left: 5%;
+    bottom: 0px;
+    text-align: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.scroll-down img{
+    animation-name: wiggle;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes wiggle {
+    0%, 100% {
+        transform: translateY(7px);
+      }
+      50% {
+        transform: translateY(-7px);
+      }
+  }
+
+.navbar{
+    position: absolute;
+    top: 100vh;
+    left: 5%;
+    z-index: 10;
+}
+.navbar>.navList>li{
+    display: block;
+    width: 110px;
+    height: 80px;
+    background-color: #222222;
+    list-style-type: none;
+    text-align: center;
+}
+
+.navbar a{
+    color: white;
+    height: inherit;
+    width: 100%;
+    /* height: 80px; */
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a:hover{
+    color: #777;
+}
+.navbar>.navList{
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar>ul>:nth-child(4){
+    border-radius: 0 0 4px 4px;
+}
+
+.scroll-down,
+.navbar>ul>:nth-child(1){
+    border-radius: 4px 4px 0 0;
+}
+
+.navbar .navlist li:active{
+    background-color: #22A39F;
+    transition: 0.3s;
+}
+
+
+#profile,
+#expo,
+#ability,
+#contact{
+    width: 100%;
+}
+
+.profBody,
+.expoBody,
+.abilityBody{
+    margin: 4% 20%;
+}
+
+@media only screen and (max-width: 800px) {
+    .profBody,
+    .expoBody,
+    .abilityBody,
+    .contactBody {
+      margin: 4% 2%;
+    }
+  }
+
+.profHead, 
+.profDescript,
+.expoHead,
+.expoDescript,
+.abilityHead,
+.abilityDescript,
+.contactHead,
+.contactDescript{
+    text-align: center;
+    justify-content: center;
+}
+
+.profHead h1,
+.expoHead h1,
+.abilityHead h1,
+.contactHead h1{
+    font-size: 50px;
+    color: #76BA99;
+    font-weight: 100;
+    margin: 20px;
+    
+}
+
+#profile hr,
+#expo hr,
+#ability hr,
+#contact hr,
+.dividehr{
+    width: 100%;
+    margin-top: 30px;
+    border: 1px solid darkseagreen;
+    background-color:#76BA99;
+
+}
+
+.profHead>h2,
+.profDescript>p{
+    padding: 7px 5px;
+    margin: 0;
+}
+
+.profInfo{
+    display: flex;
+    margin-top: 50px;
+}
+
+.profPic{
+    margin: 0px;
+    width: fit-content;
+    display: flex;
+}
+.profPic>figure{
+    margin: 0px;
+    justify-content: center;
+    
+}
+.profile-image{
+    border-radius: 300px;
+    width: 100%;
+    max-width: 246px;
+    align-items: center;
+}
+
+.profdetails>h2,
+.aboutMe>h2{
+    font-size: 30px;
+    color: #76BA99;
+    font-weight: 100;
+}
+
+.profdetails>ul{
+    padding: 0px;
+}
+.profdetails>ul>li{
+    list-style-type: none;
+    font-family: ubuntu;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.aboutMe>p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.aboutMe, .profPic, .profdetails{
+    float: left;
+    width: 33%;
+    padding: 10px;
+    margin: 0;
+}
+
+.tweet{
+    width: 90px;
+    display: flex;
+    padding: 5px 15px;
+    border-radius: 25px;
+    height: 35px;
+    align-items: center;
+    background-color: #f3f7fa;
+}
+
+.tweet:hover{
+    background-color: #D3DCE3;
+}
+
+.tweet>img{
+    height: 25px;
+}
+
+.tweet>a{
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    color: black;
+    margin-left: 10px;
+    height: fit-content;
+}
+
+.quote>p{
+    font-size: 25px;
+    color: #76BA99;
+    padding: 10px 50px;
+    text-align: center;
+    margin: 0;
+}
+
+.quote>pre{
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(/myIcons/border.png) 40 round;
+    font-size: 15px;
+    margin: 0;
+}
+
+.expoInfo{
+    width: 100%;
+    /* background-color: ; */
+
+}
+#expo{
+    background-color: #F3EFE0;
+    padding: 10px 0;
+}
+
+.expoInfo>p,
+.careers>p,
+.abilityInfo>p{
+    display: flex;
+    font-size: 25px;
+    color: #76BA99;
+    padding: 10px 10px;
+    margin: 0;
+}
+.expoInfo .col1,
+.expoInfo .col2{
+    flex: 1;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.expoInfo .col1{
+    width: 40%;
+}
+
+.expoInfo .col2>p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+.skills{
+    display: flex;
+}
+.skills ul{
+    padding: 0;
+}
+.skills>.list1,
+.skills>.list2{
+    flex: 1;
+}
+
+
+.skills>.list1 li,
+.skills>.list2 li{
+    list-style-type: none;
+    padding: 8px;
+}
+
+.skills>.list1 li:hover,
+.skills>.list2 li:hover{
+    background-color: #F2F2F2;
+}
+.skills>.list1 li>.ability-score,
+.skills>.list2 li>.ability-score{
+     float: right;
+}
+.skills>.list2 {
+    float: right;
+}
+
+#ability{
+    background-color: white;
+    /* padding: 10px 0; */
+}
+
+.ability-score{
+    width: 110px;
+    transition: 0.5s;
+    text-align: right;
+
+}
+
+.ability-score:hover{
+    width: 130px;
+    font-size: 18px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.seemore{
+    width: 120px;
+    display: flex;
+    padding: 5px 15px;
+    border-radius: 25px;
+    height: 35px;
+    align-items: center;
+    background-color: #76BA99;
+    margin: auto;
+}
+
+.seemore:hover{
+    background-color: #22A39F;
+}
+
+.seemore>a>img,
+.gitProj>a>img{
+    height: 20px;
+    vertical-align: middle;
+}
+
+.seemore>a,
+.gitProj>a{
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    color: black;
+    margin-left: 10px;
+    height: fit-content;
+}
+
+.git>p{
+    width: 100%;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.gitProj{
+    width: 100px;
+    display: flex;
+    padding: 5px 15px;
+    border-radius: 5px;
+    height: 35px;
+    align-items: center;
+    background-color: #a69ab4;
+    margin: auto;
+    font-size: 17px;
+}
+
+.gitProj:hover{
+    background-color: #967bb6;
+}
+
+.Margin60{
+    margin: 2% 20%;
+}
+
+#contact{
+    background-color: #434242;
+    padding: 10px 0;
+    height: 100vh;
+    color: #F3EFE0;
+}
+
+#contact hr{
+    width: 60%;
+}
+
+.socials>table{
+    /* margin: 2% 10%; */
+    width: 100%;
+    
+}
+
+.sociocommon{
+    width: max-content;
+    padding: 10px 5px;
+    align-items: center;
+    margin: auto;
+}
+
+
+.sociocommon>a>img{
+    height: 25px;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.sociocommon>a{
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    color: black;
+    height: fit-content;
+    font-size: 25px;
+}
+
+
+
+.infoData{
+    display: flex;
+    padding: 5px 15px;
+    border-radius: 5px;
+    align-items: center;
+    background-color: #76BA99;
+    /* margin: auto; */
+    font-size: 17px;
+    text-align:center;
+}
+
+.infoData>a>img{
+    height: 25px;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.infoData a{
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    color: black;
+    height: fit-content;
+    font-size: 25px;
+    width: 100%;
+}
+
+#contact .end{
+    width: 100%;
+    text-align: center;
+}
+
+
+.column {
+    float: left;
+    width: 50%;
+    /* padding: 10px; */
+    height: 100vh; /* Should be removed. Only for demonstration */
+  }
+
+.column>img{
+    width: -webkit-fill-available;
+}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .column2{
+    position: relative;
+    background-color:darkcyan;
+
+}
+
+.column2>form{
+    height: max-content;
+    position: absolute;
+    right: 0;
+    margin: auto;
+    width: fit-content;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: cadetblue;
+}
+
+.column2>form tr{
+    padding: 6px;
+}
+
+.column2>form .sumbit,
+.column2>h1{
+    padding: 25px;
+    text-align: center;
+}

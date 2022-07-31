@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="../myStyles/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        input{
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="column">
+            <img src="../myMedia/bgimage.png" alt="">
+        </div>
+        <section class="column column2">
+            <h1>Registration Form</h1>
+            <form action="../myPages/success.html" onsubmit="validateForm()" novalidate>
+    
+                <table>
+                    <tr>
+                        <td><label for="fname">First Name:</label></td>
+                        <td><input id="fname" name="myName" onblur="validate1()"  ></td>
+                    </tr>
+                    <tr><td></td><td id="error1"></td></tr>
+                    <tr>
+                        <td><label for="age">Age: </label></td>
+                        <td><input type="number"  id="age" min="20" max="60" onblur="validate2()"  ></td>
+                    </tr>
+                    <tr><td></td><td id="error2"></td></tr>
+                    <tr>
+                        <td><label for="contactdiv">Mobile Number: </label></td>
+                        <td><input id="contactdiv"  onblur="validate3()"type="tel" ></td>
+                    </tr>
+                    <tr><td></td><td id="error3"></td></tr>
+                    <tr>
+                        <td><label for="mail">Email Id: </label></td>
+                        <td><input type="email"  id="mail" onblur="validate4()"  ></td>
+                    </tr>
+                    <tr><td></td><td id="error4"></td></tr>
+                    <tr>
+                        <td><label for="uname">Set Username: </label></td>
+                        <td><input type="text"  id="uname" minlength="3" maxlength="10" onblur="validate5()"  ></td>
+                    </tr>
+                    <tr><td></td><td id="error5"></td></tr>
+                    <tr>
+                        <td><label for="pass">Set Password: </label></td>
+                        <td><input type="password"  id="pass" onblur="validate6()"></td>
+                    </tr>
+                    <tr><td></td><td id="error6"></td></tr>
+                    <tr>
+                        <td><label for="confirmpass">Confirm Password: </label></td>
+                        <td><input type="password"  id="confirmpass" onblur="validate7()"  ></td>
+                    </tr>
+                    <tr><td></td><td id="error7"></td></tr>
+                    <tr class="sumbit">
+                        <td><input type="submit" value="REGISTER"></td>
+                        <td><input type="reset"onblur="()" ></td>
+                    </tr>
+                    
+    
+                </table>
+            </form>
+        </section>
+      </div>
+
+            
+    <script src="../myScript/script.js"></script>
+
+</body>
+</html>
