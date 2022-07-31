@@ -295,7 +295,7 @@ body{
 .quote>pre{
     border: 10px solid transparent;
     padding: 15px;
-    border-image: url(/myIcons/border.png) 40 round;
+    border-image: url(../myIcons/border.png) 40 round;
     font-size: 15px;
     margin: 0;
 }
